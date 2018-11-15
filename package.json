@@ -1,0 +1,27 @@
+{
+  "name": "interview-prep",
+  "version": "1.0.0",
+  "description": "repository for storing interview related topics and practice problems",
+  "main": "index.js",
+  "repository": "https://github.com/LoganAHart/interview-prep.git",
+  "author": "Logan Hart",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "test-watch": "jest --watch"
+  },
+  "jest": {
+    "testPathIgnorePatterns": ["/node_modules/", "/_template/"]
+  },
+  "dependencies": {
+    "eslint": "^5.9.0",
+    "jest": "^23.6.0"
+  },
+  "devDependencies": {
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0"
+  }
+}
