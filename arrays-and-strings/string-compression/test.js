@@ -1,5 +1,9 @@
-const { func } = require('./index')
+const { stringCompression } = require('./index')
 
-test('func(args)', () => {
-  expect(func('args')).toEqual('answer')
+test(`stringCompression('aabcccccaaa')`, () => {
+  expect(stringCompression('aabcccccaaa')).toEqual('a2b1c5a3')
+})
+
+test(`stringCompression('abcdefgh')`, () => {
+  expect(stringCompression('abcdefgh')).toEqual('abcdefgh')
 })
