@@ -1,5 +1,5 @@
-const { func } = require('./index')
+const { URLify } = require('./index')
 
-test('func(args)', () => {
-  expect(func('args')).toEqual('answer')
+test(`URLify('Mr John Smith   ')`, () => {
+  expect(URLify('Mr John Smith   ')).toEqual('Mr%20John%20Smith')
 })

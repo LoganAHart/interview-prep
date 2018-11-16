@@ -1,5 +1,13 @@
-const { func } = require('./index')
+const { isUnique } = require('./index')
 
-test('func(args)', () => {
-  expect(func('args')).toEqual('answer')
+test(`isUnique('abcdefg')`, () => {
+  expect(isUnique('abcdefg')).toEqual(true)
+})
+
+test(`isUnique('abcdaefg')`, () => {
+  expect(isUnique('abcdaefg')).toEqual(false)
+})
+
+test(`isUnique('')`, () => {
+  expect(isUnique('')).toEqual(true)
 })
