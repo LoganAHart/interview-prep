@@ -1,0 +1,14 @@
+.parent {
+  height: 300px;
+  width: 600px;
+  padding: 0 1em;
+  margin: 1em;
+  border: 1px solid red;
+}
+
+.child {
+  font-size: 1.2rem;
+  position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
+}

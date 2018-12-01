@@ -1,0 +1,40 @@
+.spinner {
+  margin: 10px;
+  animation: rotate 2s linear infinite;
+  width: 180px;
+  height: 180px;
+}
+
+.spinner-dot {
+  stroke: #000;
+  stroke-width: 1;
+  fill: #000;
+  animation: skew 2s linear infinite alternate;
+}
+
+.spinner-border {
+  fill: transparent;
+  stroke-width: 2;
+  width: 100%;
+  height: 100%;
+}
+
+.path {
+  stroke-dasharray: 170;
+  stroke-dashoffset: 20;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes skew {
+  from {
+    transform: skewX(10deg)
+  }
+  to {
+    transform: skewX(40deg)
+  }
+}
